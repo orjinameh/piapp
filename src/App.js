@@ -6,22 +6,22 @@ function App() {
   const [incompletePayment, setIncompletePayment] = useState(null);
 
   // Initialize Pi SDK when component mounts
-  useEffect(() => {
-  if (window.Pi) {
-    window.Pi.init({ 
-      version: "2.0", 
-      sandbox: true   // This is crucial for localhost testing
-    });
-  }
-}, []);
+//   useEffect(() => {
+//   if (window.Pi) {
+//     window.Pi.init({ 
+//       version: "2.0", 
+//       sandbox: true   // This is crucial for localhost testing
+//     });
+//   }
+// }, []);
 
   // Handler for incomplete payments (required by Pi.authenticate)
-  const onIncompletePaymentFound = (payment) => {
-    console.log("Incomplete payment found:", payment);
-    setIncompletePayment(payment);
-    // Example: Send to your backend to handle (cancel/complete)
-    // fetch('/payment/complete', { method: 'POST', body: JSON.stringify({ ... }) });
-  };
+  // const onIncompletePaymentFound = (payment) => {
+  //   console.log("Incomplete payment found:", payment);
+  //   setIncompletePayment(payment);
+  //   // Example: Send to your backend to handle (cancel/complete)
+  //   // fetch('/payment/complete', { method: 'POST', body: JSON.stringify({ ... }) });
+  // };
 
   // Authenticate the user
   // const authenticateUser = async () => {
@@ -47,11 +47,11 @@ function App() {
     <div style={{ padding: '20px', fontFamily: 'Arial' }}>
       <h1>My Pi App</h1>
 
-      {authError && <p style={{ color: 'red' }}>Error: {authError.message || authError}</p>}
+      {/* {authError && <p style={{ color: 'red' }}>Error: {authError.message || authError}</p>}
 
       {incompletePayment && (
         <p>Incomplete payment detected! ID: {incompletePayment.identifier}</p>
-      )}
+      )} */}
 
       {user ? (
         <div>
