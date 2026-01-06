@@ -39,9 +39,9 @@ function App() {
   };
 
   // Call authenticate on mount or on button click
-  useEffect(() => {
-    authenticateUser();
-  }, []);
+  // useEffect(() => {
+  //   authenticateUser();
+  // }, []);
 
   return (
     <div style={{ padding: '20px', fontFamily: 'Arial' }}>
