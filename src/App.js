@@ -24,19 +24,19 @@ function App() {
   };
 
   // Authenticate the user
-  const authenticateUser = async () => {
-    const scopes = ['username', 'payments'];
+  // const authenticateUser = async () => {
+  //   const scopes = ['username', 'payments'];
 
-    try {
-      const auth = await window.Pi.authenticate(scopes, onIncompletePaymentFound);
-      console.log("Authenticated successfully:", auth);
-      setUser(auth.user); // auth.user contains username, uid, etc.
-      setAuthError(null);
-    } catch (error) {
-      console.error("Authentication error:", error);
-      setAuthError(error);
-    }
-  };
+  //   try {
+  //     const auth = await window.Pi.authenticate(scopes, onIncompletePaymentFound);
+  //     console.log("Authenticated successfully:", auth);
+  //     setUser(auth.user); // auth.user contains username, uid, etc.
+  //     setAuthError(null);
+  //   } catch (error) {
+  //     console.error("Authentication error:", error);
+  //     setAuthError(error);
+  //   }
+  // };
 
   // Call authenticate on mount or on button click
   // useEffect(() => {
