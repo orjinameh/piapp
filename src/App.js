@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 
 function App() {
-  const [user, setUser] = useState(null);
-  const [authError, setAuthError] = useState(null);
-  const [incompletePayment, setIncompletePayment] = useState(null);
+  // const [user, setUser] = useState(null);
+  // const [authError, setAuthError] = useState(null);
+  // const [incompletePayment, setIncompletePayment] = useState(null);
 
   // Initialize Pi SDK when component mounts
 //   useEffect(() => {
@@ -53,14 +53,14 @@ function App() {
         <p>Incomplete payment detected! ID: {incompletePayment.identifier}</p>
       )} */}
 
-      {user ? (
+      {/* {user ? ( */}
         <div>
           <p>Hello, <strong>{user.username}</strong>! You're ready to make payments.</p>
           {/* Add your payment button here (see Step 8) */}
         </div>
-      ) : (
+      {/* ) : (
         <p>Authenticating with Pi...</p>
-      )}
+      )} */}
     </div>
   );
 }
