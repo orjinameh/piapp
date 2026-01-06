@@ -55,7 +55,7 @@ function App() {
 
       {/* {user ? ( */}
         <div>
-          <p>Hello, <strong>{user.username}</strong>! You're ready to make payments.</p>
+          {/* <p>Hello, <strong>{user.username}</strong>! You're ready to make payments.</p> */}
           {/* Add your payment button here (see Step 8) */}
         </div>
       {/* ) : (
